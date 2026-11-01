@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pipe — Sales CRM
+
+> Full-featured CRM with drag-and-drop pipeline, contact management, and forecasting, built by [Zolentix](https://zolentix.com)
+
+![Pipe CRM](screenshot.jpg)
+
+## Features
+
+- **Kanban Pipeline** — Drag-and-drop deals across 6 stages (Lead to Won/Lost)
+- **Pipeline KPIs** — Total value, weighted forecast, win rate, won revenue
+- **Contact Management** — Searchable contacts linked to companies and deals
+- **Company Directory** — 15+ companies with industry, size, and revenue data
+- **Task Manager** — Priority-based tasks with due dates and overdue alerts
+- **Activity Feed** — Timeline of calls, emails, meetings, and notes
+- **Deal Cards** — Value, owner, company, close date, and probability
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Database:** Prisma ORM + SQLite
+- **Drag & Drop:** HTML5 Drag Events
+- **Fonts:** Space Grotesk + Inter
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
+npx prisma db push
+npx prisma db seed
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to manage your pipeline.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT — [Zolentix](https://zolentix.com)
